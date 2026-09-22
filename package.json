@@ -1,0 +1,23 @@
+{
+  "name": "secureai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.7",
+    "@types/node": "^22.20.4",
+    "ethers": "^6.17.0",
+    "hardhat": "^3.17.0",
+    "typescript": "~6.0.3"
+  }
+}
