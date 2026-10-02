@@ -1,0 +1,1 @@
+contract S { mapping(address => uint) b; function check() public {} }

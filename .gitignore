@@ -29,3 +29,13 @@
 
 # Snapshot cheatcodes output
 /snapshots
+
+# Datasets and model weights
+data/raw/
+data/processed/
+*.pt
+*.onnx
+
+# Python and Node caches
+__pycache__/
+venv/

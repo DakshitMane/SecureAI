@@ -1,0 +1,1 @@
+contract V { function w() public { msg.sender.call{value: 1}(''); } }
