@@ -19,20 +19,19 @@ class OpCodeBiLSTM(nn.Module):
 class DBNClassifierHead(nn.Module):
     def __init__(self, input_dim=1024):
         super(DBNClassifierHead, self).__init__()
-        # Deep Belief Network / High-density MLP stack
         self.fc1 = nn.Linear(input_dim, 512)
         self.relu1 = nn.ReLU()
         self.dropout1 = nn.Dropout(0.3)
         self.fc2 = nn.Linear(512, 128)
         self.relu2 = nn.ReLU()
         self.dropout2 = nn.Dropout(0.2)
-        self.fc3 = nn.Linear(128, 1)
-        self.sigmoid = nn.Sigmoid()
+        self.fc3 = nn.Linear(128, 9)
+        # SIGMOID REMOVED
 
     def forward(self, fused_features):
         x = self.dropout1(self.relu1(self.fc1(fused_features)))
         x = self.dropout2(self.relu2(self.fc2(x)))
-        out = self.sigmoid(self.fc3(x))
+        out = self.fc3(x) # RAW LOGITS RETURNED
         return out
 
 class DualModalVulnNet(nn.Module):

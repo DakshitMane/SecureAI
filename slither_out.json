@@ -1,0 +1,329 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "w",
+            "source_mapping": {
+              "start": 13,
+              "length": 54,
+              "filename_relative": "data/test_samples/vault_vuln.sol",
+              "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+              "filename_short": "data/test_samples/vault_vuln.sol",
+              "is_dependency": false,
+              "lines": [
+                1
+              ],
+              "starting_column": 14,
+              "ending_column": 68
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "V",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 69,
+                  "filename_relative": "data/test_samples/vault_vuln.sol",
+                  "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+                  "filename_short": "data/test_samples/vault_vuln.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    1,
+                    2
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "w()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.call{value: 1}()",
+            "source_mapping": {
+              "start": 35,
+              "length": 29,
+              "filename_relative": "data/test_samples/vault_vuln.sol",
+              "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+              "filename_short": "data/test_samples/vault_vuln.sol",
+              "is_dependency": false,
+              "lines": [
+                1
+              ],
+              "starting_column": 36,
+              "ending_column": 65
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "w",
+                "source_mapping": {
+                  "start": 13,
+                  "length": 54,
+                  "filename_relative": "data/test_samples/vault_vuln.sol",
+                  "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+                  "filename_short": "data/test_samples/vault_vuln.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    1
+                  ],
+                  "starting_column": 14,
+                  "ending_column": 68
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "V",
+                    "source_mapping": {
+                      "start": 0,
+                      "length": 69,
+                      "filename_relative": "data/test_samples/vault_vuln.sol",
+                      "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+                      "filename_short": "data/test_samples/vault_vuln.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        1,
+                        2
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "w()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "V.w() (data/test_samples/vault_vuln.sol#1) sends eth to arbitrary user\n\tDangerous calls:\n\t- msg.sender.call{value: 1}() (data/test_samples/vault_vuln.sol#1)\n",
+        "markdown": "[V.w()](data/test_samples/vault_vuln.sol#L1) sends eth to arbitrary user\n\tDangerous calls:\n\t- [msg.sender.call{value: 1}()](data/test_samples/vault_vuln.sol#L1)\n",
+        "first_markdown_element": "data/test_samples/vault_vuln.sol#L1",
+        "id": "2dc062c5e048be2dff23d556562175eac8fe1a5c6ac6d6d74f6859d139e2e1d0",
+        "check": "arbitrary-send-eth",
+        "impact": "High",
+        "confidence": "Medium",
+        "reference": "https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "w",
+            "source_mapping": {
+              "start": 13,
+              "length": 54,
+              "filename_relative": "data/test_samples/vault_vuln.sol",
+              "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+              "filename_short": "data/test_samples/vault_vuln.sol",
+              "is_dependency": false,
+              "lines": [
+                1
+              ],
+              "starting_column": 14,
+              "ending_column": 68
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "V",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 69,
+                  "filename_relative": "data/test_samples/vault_vuln.sol",
+                  "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+                  "filename_short": "data/test_samples/vault_vuln.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    1,
+                    2
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "w()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.call{value: 1}()",
+            "source_mapping": {
+              "start": 35,
+              "length": 29,
+              "filename_relative": "data/test_samples/vault_vuln.sol",
+              "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+              "filename_short": "data/test_samples/vault_vuln.sol",
+              "is_dependency": false,
+              "lines": [
+                1
+              ],
+              "starting_column": 36,
+              "ending_column": 65
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "w",
+                "source_mapping": {
+                  "start": 13,
+                  "length": 54,
+                  "filename_relative": "data/test_samples/vault_vuln.sol",
+                  "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+                  "filename_short": "data/test_samples/vault_vuln.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    1
+                  ],
+                  "starting_column": 14,
+                  "ending_column": 68
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "V",
+                    "source_mapping": {
+                      "start": 0,
+                      "length": 69,
+                      "filename_relative": "data/test_samples/vault_vuln.sol",
+                      "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+                      "filename_short": "data/test_samples/vault_vuln.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        1,
+                        2
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "w()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "V.w() (data/test_samples/vault_vuln.sol#1) ignores return value by msg.sender.call{value: 1}() (data/test_samples/vault_vuln.sol#1)\n",
+        "markdown": "[V.w()](data/test_samples/vault_vuln.sol#L1) ignores return value by [msg.sender.call{value: 1}()](data/test_samples/vault_vuln.sol#L1)\n",
+        "first_markdown_element": "data/test_samples/vault_vuln.sol#L1",
+        "id": "f792095ea0ba6ff90b2187f130be9ed4178da4076e0eca516cdc5850fc25ede8",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium",
+        "reference": "https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "w",
+            "source_mapping": {
+              "start": 13,
+              "length": 54,
+              "filename_relative": "data/test_samples/vault_vuln.sol",
+              "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+              "filename_short": "data/test_samples/vault_vuln.sol",
+              "is_dependency": false,
+              "lines": [
+                1
+              ],
+              "starting_column": 14,
+              "ending_column": 68
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "V",
+                "source_mapping": {
+                  "start": 0,
+                  "length": 69,
+                  "filename_relative": "data/test_samples/vault_vuln.sol",
+                  "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+                  "filename_short": "data/test_samples/vault_vuln.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    1,
+                    2
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "w()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.call{value: 1}()",
+            "source_mapping": {
+              "start": 35,
+              "length": 29,
+              "filename_relative": "data/test_samples/vault_vuln.sol",
+              "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+              "filename_short": "data/test_samples/vault_vuln.sol",
+              "is_dependency": false,
+              "lines": [
+                1
+              ],
+              "starting_column": 36,
+              "ending_column": 65
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "w",
+                "source_mapping": {
+                  "start": 13,
+                  "length": 54,
+                  "filename_relative": "data/test_samples/vault_vuln.sol",
+                  "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+                  "filename_short": "data/test_samples/vault_vuln.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    1
+                  ],
+                  "starting_column": 14,
+                  "ending_column": 68
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "V",
+                    "source_mapping": {
+                      "start": 0,
+                      "length": 69,
+                      "filename_relative": "data/test_samples/vault_vuln.sol",
+                      "filename_absolute": "C:/MajorProject2K26-27/SecureAI/data/test_samples/vault_vuln.sol",
+                      "filename_short": "data/test_samples/vault_vuln.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        1,
+                        2
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "w()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Low level call in V.w() (data/test_samples/vault_vuln.sol#1):\n\t- msg.sender.call{value: 1}() (data/test_samples/vault_vuln.sol#1)\n",
+        "markdown": "Low level call in [V.w()](data/test_samples/vault_vuln.sol#L1):\n\t- [msg.sender.call{value: 1}()](data/test_samples/vault_vuln.sol#L1)\n",
+        "first_markdown_element": "data/test_samples/vault_vuln.sol#L1",
+        "id": "912afa02c3b38dc1ed8ec94941395a90391f5bc1f4a2b0b7ca18317c1c0f0ff3",
+        "check": "low-level-calls",
+        "impact": "Informational",
+        "confidence": "High",
+        "reference": "https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls"
+      }
+    ]
+  }
+}

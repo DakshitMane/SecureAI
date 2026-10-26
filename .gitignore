@@ -35,6 +35,7 @@ data/raw/
 data/processed/
 *.pt
 *.onnx
+*.safetensors
 
 # Python and Node caches
 __pycache__/
